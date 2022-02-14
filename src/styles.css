@@ -1,0 +1,288 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #30cc28ff;
+  --secondary-color: #aa0000ff;
+  --tertiary-color: #232323ff;
+  --green-dark-color: #30cc28;
+  --white-color: #fff;
+  --gray-color: #676666;
+  --text-color: #212529;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*       CAROUSEL       */
+#carouselMain {
+  padding: 0;
+}
+
+.carousel-inner {
+  padding: 0;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-item .carousel--tag {
+  position: absolute;
+  bottom: 20px;
+  left: 5px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  align-items: center;
+}
+
+#carouselMain .carousel-control-prev,
+#carouselMain .carousel-control-next {
+  width: 5%;
+}
+
+#carouselMain .carousel--tag picture img {
+  width: 30px;
+}
+
+#carouselMain .carousel--tag p {
+  padding: 7.5px 10px;
+  margin: 0;
+}
+
+/*       HEADER | INFO       */
+.header--info {
+  background-color: var(--tertiary-color);
+  color: var(--white-color);
+  border-top: 4px solid var(--primary-color);
+}
+
+.header--info .contact .contact--content .whatsapp-icon {
+  height: 20px;
+}
+
+.header--info .contact .contact--content .whatsapp-icon img {
+  height: 25px;
+}
+
+/*       HEADER | LOGO      */
+
+.header--logo picture img {
+  width: 42px;
+}
+
+.header--logo h1 {
+  font-size: 63px;
+}
+
+.header--logo h1 a {
+  color: var(--primary-color);
+}
+
+.header--logo h6 {
+  color: var(--gray-color);
+  font-size: 23px;
+}
+
+.header--social-media p {
+  margin: 0;
+}
+
+.header--social-media picture img {
+  width: 42px;
+}
+
+.header--weather picture {
+  background-color: var(--gray-color);
+}
+
+/*       NAV       */
+.header--nav {
+  border-top: 1px solid var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
+  background-color: var(--white-color);
+}
+
+.navbar-light .navbar-toggler {
+  border: 1px solid var(--primary-color);
+}
+
+.navbar-nav .nav-link {
+  width: fit-content;
+}
+
+/*       MAIN | NEWS | PRINCIPAL      */
+.main--container {
+  border-bottom: 4px solid var(--green-dark-color);
+}
+
+.main--news .news--principal picture img {
+  width: 100%;
+}
+
+.main--news .news--principal {
+  border-bottom: 4px solid var(--green-dark-color);
+}
+
+.news--principal a {
+  color: var(--text-color);
+}
+
+/*       MAIN | NEWS | LASTEST         */
+.title--content {
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+}
+
+.content--article .badge {
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  font-size: 20px;
+}
+
+.content--article .badge:hover {
+  color: var(--primary-color);
+}
+
+/*       MOST READ       */
+.most-read--title {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.most-read--title h5 {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  position: relative;
+  top: 3px;
+}
+
+.most-read--article picture img {
+  width: 100%;
+}
+
+.most-read--article p {
+  color: var(--gray-color);
+}
+
+/*       MOST READ | ADVERTISING        */
+.advertising--container .advertising--article picture img {
+  width: 100%;
+}
+
+/*       MAIN | ARTICLES  */
+.title--section {
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+}
+
+.content--article picture img {
+  width: 100%;
+  height: 200px;
+}
+
+.content--article a {
+  color: var(--text-color);
+}
+
+.content--article p {
+  margin: 0;
+}
+
+.content--article:nth-child(2n+1) {
+  border-right: 1px solid var(--primary-color);
+}
+
+/*       MAIN | MOST READ       */
+.most-read--container {
+  position: relative;
+}
+
+.most-read--container::before {
+  content: "";
+  border-left: 1px solid var(--primary-color);
+  position: absolute;
+  height: calc(100% - 65px);
+  top: 65px;
+  left: 0;
+}
+
+.most-read--container::after {
+  content: "";
+  border-right: 1px solid var(--primary-color);
+  position: absolute;
+  height: calc(100% - 65px);
+  top: 65px;
+  right: 0;
+}
+
+/*       MAIN | MOST READ | STATISTICS       */
+.statistics--container {
+  position: sticky;
+  top: 70px;
+}
+
+.statistics--container .statistics--articles {
+  background-color: var(--secondary-color);
+}
+
+.statistics--articles article {
+  color: var(--white-color);
+}
+
+.statistics--articles .progress-bar {
+  width: 35%;
+  background-color: var(--primary-color);
+  font-weight: bold;
+  color: var(--tertiary-color);
+}
+
+/*       FOOTER       */
+footer {
+  background-color: var(--tertiary-color);
+}
+
+/*       FOOTER | SOCIAL MEDIA       */
+.footer--social-media picture img {
+  width: 30px;
+  margin: 0 5px;
+  
+}
+
+/*       FOOTER | CONTENT       */
+.footer--content li {
+  list-style: none;
+}
+
+.footer--content li a {
+  color: var(--white-color);
+  opacity: 60%;
+}
+
+.footer--content .content--list ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0;
+}
+
+/*       FOOTER | COPYRIGHT       */
+.footer--copyright {
+  color: var(--white-color);
+  margin-top: 20px;
+  opacity: 45%;
+}
+
+/*       MEDIA QUERY       */
+
+/*       MAIN | MOST READ | STATISTICS       */
+@media screen and (max-width: 991px) {
+  .statistics--container {
+    position: initial;
+  }
+}
